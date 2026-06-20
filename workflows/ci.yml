@@ -1,0 +1,20 @@
+name: RoadStar CI
+on: [push, pull_request]
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.12' }
+      - name: Compile Python application
+        run: python -m py_compile server.py
+      - name: Start application
+        run: python server.py > server.log 2>&1 &
+      - name: Smoke-test dealer API
+        run: |
+          sleep 2
+          curl --fail http://127.0.0.1:8000/djangoapp/get_dealers
+      - name: Validate required project artifacts
+        run: test -f server/frontend/static/About.html && test -f server/frontend/static/Contact.html && test -f server/frontend/src/components/Register/Register.jsx
+
