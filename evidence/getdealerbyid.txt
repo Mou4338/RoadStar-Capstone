@@ -1,0 +1,3 @@
+$ curl http://127.0.0.1:8000/djangoapp/dealer/1
+{"id":1,"full_name":"RoadStar Kansas City","city":"Kansas City","state":"KS","address":"1550 Main Street","zip":"66101","phone":"(913) 555-0142","rating":4.9}
+

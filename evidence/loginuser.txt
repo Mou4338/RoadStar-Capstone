@@ -1,0 +1,5 @@
+$ curl -i -c cookies.txt -d "username=demo&password=Demo123!" http://127.0.0.1:8000/login
+HTTP/1.0 302 Found
+Location: /
+Set-Cookie: sid=<generated-session-token>; Path=/; HttpOnly; SameSite=Lax
+

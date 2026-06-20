@@ -1,0 +1,6 @@
+$ curl "http://127.0.0.1:8000/djangoapp/get_dealers?state=KS"
+[
+  {"id":1,"full_name":"RoadStar Kansas City","city":"Kansas City","state":"KS","address":"1550 Main Street","zip":"66101","phone":"(913) 555-0142","rating":4.9},
+  {"id":2,"full_name":"RoadStar Wichita","city":"Wichita","state":"KS","address":"8200 East Kellogg Dr","zip":"67207","phone":"(316) 555-0194","rating":4.7}
+]
+

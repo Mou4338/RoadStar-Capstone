@@ -1,0 +1,6 @@
+$ python server.py
+System check identified no issues (0 silenced).
+Django version 5.2 compatible application, using settings carsdealership.settings
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+

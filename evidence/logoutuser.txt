@@ -1,0 +1,5 @@
+$ curl -i -b cookies.txt http://127.0.0.1:8000/logout
+HTTP/1.0 302 Found
+Location: /
+Set-Cookie: sid=; Path=/; Max-Age=0
+

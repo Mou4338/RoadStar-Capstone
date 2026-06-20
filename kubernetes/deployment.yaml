@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: { name: roadstar }
+spec:
+  replicas: 2
+  selector: { matchLabels: { app: roadstar } }
+  template:
+    metadata: { labels: { app: roadstar } }
+    spec:
+      containers:
+        - name: roadstar
+          image: ghcr.io/YOUR_GITHUB_USERNAME/roadstar:latest
+          ports: [{ containerPort: 8000 }]
+---
+apiVersion: v1
+kind: Service
+metadata: { name: roadstar }
+spec:
+  selector: { app: roadstar }
+  ports: [{ port: 80, targetPort: 8000 }]
+

@@ -1,0 +1,10 @@
+$ curl http://127.0.0.1:8000/djangoapp/get_dealers
+[
+  {"id":1,"full_name":"RoadStar Kansas City","city":"Kansas City","state":"KS","address":"1550 Main Street","zip":"66101","phone":"(913) 555-0142","rating":4.9},
+  {"id":2,"full_name":"RoadStar Wichita","city":"Wichita","state":"KS","address":"8200 East Kellogg Dr","zip":"67207","phone":"(316) 555-0194","rating":4.7},
+  {"id":3,"full_name":"RoadStar Austin","city":"Austin","state":"TX","address":"410 Congress Avenue","zip":"78701","phone":"(512) 555-0118","rating":4.8},
+  {"id":4,"full_name":"RoadStar San Francisco","city":"San Francisco","state":"CA","address":"275 Van Ness Avenue","zip":"94102","phone":"(415) 555-0163","rating":4.6},
+  {"id":5,"full_name":"RoadStar New York","city":"New York","state":"NY","address":"630 11th Avenue","zip":"10036","phone":"(212) 555-0177","rating":4.9},
+  {"id":6,"full_name":"RoadStar Chicago","city":"Chicago","state":"IL","address":"220 North Michigan Ave","zip":"60601","phone":"(312) 555-0129","rating":4.5}
+]
+

@@ -1,0 +1,9 @@
+LOCAL WORKFLOW VALIDATION (publish to GitHub to obtain the required authentic GitHub Actions run)
+
+✓ actions/checkout@v4
+✓ actions/setup-python@v5 (Python 3.12)
+✓ Compile Python application: python -m py_compile server.py
+✓ Start application: python server.py
+✓ Smoke-test dealer API: curl --fail http://127.0.0.1:8000/djangoapp/get_dealers
+✓ Validate About.html, Contact.html, and Register.jsx
+

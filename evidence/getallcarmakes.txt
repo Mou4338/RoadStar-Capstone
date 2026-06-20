@@ -1,0 +1,10 @@
+$ curl http://127.0.0.1:8000/djangoapp/get_cars
+[
+  {"CarMake":"Audi","CarModel":["A4","Q5","e-tron"]},
+  {"CarMake":"BMW","CarModel":["3 Series","X3","i4"]},
+  {"CarMake":"Ford","CarModel":["F-150","Mustang","Escape"]},
+  {"CarMake":"Honda","CarModel":["Accord","Civic","CR-V"]},
+  {"CarMake":"Tesla","CarModel":["Model 3","Model Y","Model S"]},
+  {"CarMake":"Toyota","CarModel":["Camry","Corolla","RAV4"]}
+]
+

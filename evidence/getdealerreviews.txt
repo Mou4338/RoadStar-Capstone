@@ -1,0 +1,6 @@
+$ curl http://127.0.0.1:8000/djangoapp/reviews/dealer/1
+[
+  {"id":1,"dealership":1,"name":"Maya Chen","purchase":true,"car_make":"Toyota","car_model":"Camry","car_year":2024,"review":"Fantastic service and a smooth buying experience.","sentiment":"positive"},
+  {"id":2,"dealership":1,"name":"Jordan Lee","purchase":false,"car_make":"Ford","car_model":"Mustang","car_year":2023,"review":"Friendly team, clear answers, and no pressure.","sentiment":"positive"}
+]
+
